@@ -1,2 +1,2 @@
-# budget-data-api-php
+# Budget Data API (PHP)
 A PHP implementation of the Budget Data API
