@@ -1,5 +1,6 @@
 # Budget Data API (PHP)
-A PHP implementation of the Budget Data API
+A PHP implementation of the
+[Budget Data API](https://github.com/forevermatt/budget-data-api)
 
 ## Development
 
