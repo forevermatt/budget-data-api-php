@@ -28,3 +28,8 @@ To bring up a local copy of this for development purposes:
 7. Go to <http://localhost:8000> to view the running website.
    - To view the CRUD pages for accounts (for example), go to
      <http://localhost:8000/index.php?r=account>
+
+## Reference
+
+- [Yii2 Guide to Database Migrations](https://www.yiiframework.com/doc/guide/2.0/en/db-migrations)
+- [Yii2 Database Field Types](https://www.yiiframework.com/doc/api/2.0/yii-db-schemabuildertrait)
