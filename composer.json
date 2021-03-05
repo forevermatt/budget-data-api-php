@@ -62,7 +62,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "BudgetDataApi\\": "./"
+            "app\\": "./"
         }
     }
 }
