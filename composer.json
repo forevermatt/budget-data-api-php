@@ -21,7 +21,8 @@
         "codeception/module-filesystem": "^1.0.0",
         "codeception/module-yii2": "^1.0.0",
         "codeception/module-asserts": "^1.0.0",
-        "behat/behat": "^3.8"
+        "behat/behat": "^3.8",
+        "webmozart/assert": "^1.9"
     },
     "config": {
         "process-timeout": 1800,
