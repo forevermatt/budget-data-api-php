@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "797422081027d49b56ccc119bfb802be",
+    "content-hash": "d217d409537a75deba2c5bf44989f27f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -370,16 +370,16 @@
         },
         {
             "name": "forevermatt/budget-data-api-php-client",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/forevermatt/budget-data-api-php-client.git",
-                "reference": "9b32d5f864a0fcd02e98845e1646dcd3ed169187"
+                "reference": "19a68a64173e93ac1fbaa7a7a69b2caf20ec2bb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/forevermatt/budget-data-api-php-client/zipball/9b32d5f864a0fcd02e98845e1646dcd3ed169187",
-                "reference": "9b32d5f864a0fcd02e98845e1646dcd3ed169187",
+                "url": "https://api.github.com/repos/forevermatt/budget-data-api-php-client/zipball/19a68a64173e93ac1fbaa7a7a69b2caf20ec2bb3",
+                "reference": "19a68a64173e93ac1fbaa7a7a69b2caf20ec2bb3",
                 "shasum": ""
             },
             "require": {
@@ -423,9 +423,9 @@
             ],
             "support": {
                 "issues": "https://github.com/forevermatt/budget-data-api-php-client/issues",
-                "source": "https://github.com/forevermatt/budget-data-api-php-client/tree/0.2.0"
+                "source": "https://github.com/forevermatt/budget-data-api-php-client/tree/0.2.1"
             },
-            "time": "2021-03-11T23:39:54+00:00"
+            "time": "2021-03-11T23:51:52+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
