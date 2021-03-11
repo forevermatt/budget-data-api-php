@@ -1,19 +1,20 @@
 <?php
 
-use app\features\helpers\BudgetDataApiClient;
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use BudgetData\ApiClient\BudgetDataApiClient;
 use Webmozart\Assert\Assert;
 
 class FeatureContext implements Context
 {
-    private $budgetDataApiClient;
+    /** @var BudgetDataApiClient */
+    private $client;
 
     public function __construct()
     {
-        $this->budgetDataApiClient = new BudgetDataApiClient();
+        $this->client = new BudgetDataApiClient('http://localhost');
     }
 
     /**
@@ -21,7 +22,7 @@ class FeatureContext implements Context
      */
     public function noAccountsExist()
     {
-        $existingAccounts = $this->budgetDataApiClient->listAccounts();
+        $existingAccounts = $this->client->accountsGet();
         Assert::isEmpty($existingAccounts);
     }
 
