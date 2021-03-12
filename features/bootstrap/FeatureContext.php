@@ -5,6 +5,7 @@ use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use BudgetData\ApiClient\BudgetDataApiClient;
+use BudgetData\ApiClient\Model\Account;
 use Webmozart\Assert\Assert;
 
 class FeatureContext implements Context
@@ -31,7 +32,11 @@ class FeatureContext implements Context
      */
     public function iAddAnAccount()
     {
-        throw new PendingException();
+        $account = new Account([
+            'uuid' => '886b2197-660c-40d3-95b7-ab52681d5233',
+            'name' => 'Credit Card'
+        ]);
+        $this->client->accountsPost($account);
     }
 
     /**
