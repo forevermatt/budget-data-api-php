@@ -46,14 +46,14 @@ class AccountController extends Controller
 
     /**
      * Displays a single Account model.
-     * @param integer $id
+     * @param string $uuid
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
+    public function actionView($uuid)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $this->findModelByUuid($uuid),
         ]);
     }
 
@@ -123,5 +123,22 @@ class AccountController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    /**
+     * Finds the Account model using its UUID.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param string $uuid
+     * @return Account the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModelByUuid($uuid)
+    {
+        $model = Account::findOne(['uuid' => $uuid]);
+        if ($model !== null) {
+            return $model;
+        }
+
+        throw new NotFoundHttpException();
     }
 }

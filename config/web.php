@@ -50,6 +50,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                  'accounts/' => 'account/index',
+                 'account/<uuid:[A-Fa-f0-9\-]+>' => 'account/view',
             ],
         ],
     ],
