@@ -49,6 +49,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                 'accounts/' => 'account/index',
             ],
         ],
     ],
