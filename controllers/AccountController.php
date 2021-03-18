@@ -67,7 +67,7 @@ class AccountController extends Controller
         $model = new Account();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'uuid' => $model->uuid]);
         }
 
         return $this->render('create', [

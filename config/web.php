@@ -49,8 +49,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                 'accounts/' => 'account/index',
-                 'account/<uuid:[A-Fa-f0-9\-]+>' => 'account/view',
+                'GET,POST account/' => 'account/create',
+                'account/<uuid:[A-Fa-f0-9\-]+>' => 'account/view',
+                'accounts/' => 'account/index',
             ],
         ],
     ],
