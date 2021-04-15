@@ -9,3 +9,6 @@ test:
 	@echo "Remember to run this in the container accessed using 'make bash'"
 	@echo "----------------------------------------------------------------"
 	behat .
+
+update:
+	docker-compose exec php composer update
