@@ -36,7 +36,7 @@ class FeatureContext implements Context
             'uuid' => '886b2197-660c-40d3-95b7-ab52681d5233',
             'name' => 'Credit Card'
         ]);
-        $this->client->accountsPost($account);
+        $this->client->accountPost($account);
     }
 
     /**
